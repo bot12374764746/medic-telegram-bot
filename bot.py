@@ -1,8 +1,8 @@
 import requests
 
-BOT_TOKEN = "ВАШ_ТЕЛЕГРАМ_ТОКЕН"
-CHANNEL = "@ВАШ_КАНАЛ"
-OPENAI_API_KEY = "ВАШ_OPENAI_КЛЮЧ"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL = os.getenv("CHANNEL")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def generate_post():
     headers = {
