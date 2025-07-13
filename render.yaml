@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: telegram-post-bot
+    env: python
+    plan: free
+    schedule: "0 9 * * *"
+    buildCommand: ""
+    startCommand: "python bot.py"
